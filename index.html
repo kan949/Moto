@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>МотоКалендарь2023</title>
+    <link rel="stylesheet" href="main.css">
+    <script language="javascript" type="text/javascript">
+        var d = new Date();
+        var day=new Array("воскресенье","понедельник","вторник","среда","четверг","пятница","суббота");
+        var month=new Array("января","февраля","марта","апреля","мая","июня","июля","августа","сентября","октября","ноября","декабря");
+        var TODAY = day[d.getDay()]+" " +d.getDate()+ " " + month[d.getMonth()] + " " + d.getFullYear() + " г.";
+     </script>
+</head>
+<body>
+    <header>
+        <center>
+            
+            
+                  <script language="javascript" type="text/javascript">
+                     document.write("Сегодня ".fontsize (4).fontcolor ('black')+TODAY.fontsize (4).fontcolor ('black'));
+                  </script> 
+       <h1>МотоКалендарь2023</h1>
+       
+    </header>
+    <section>
+        <div id="content">
+    </section>
+    <footer>
+        <hr>
+        &copy;
+    </footer>
+    
+</body>
+</html>
