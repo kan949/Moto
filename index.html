@@ -22,9 +22,9 @@
             const date = new Date();
             const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
             const day = date.toLocaleDateString(undefined, options);
-            document.getElementById('time').innerHTML =
-                `Сегодня: ${day}`;
-        }
+
+          <h1 class="h4">Сегодня: ${day}</h1>
+
 
         setInterval(updateTime, 1000);
         updateTime();
