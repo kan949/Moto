@@ -11,13 +11,21 @@
     </title>
 </head>
 
-<body bgcolor="blue">
+<body bgcolor="white">
   <center>
     <div class="main1">
  
-    <h1 class="h4">Алтайский край, с.Пещерки Approach 1: Using JavaScript Date Object      </h1> 
+    <h1 class="h3">Алтайский край, с.Пещерки Approach 1: Using JavaScript Date Object      </h1> 
 
-<p>Текущая дата: <time datetime="2025-05-27">26 мая 2025 года</time></p>
+<div id="current_date"></div>  
+<script>  
+    var date = new Date();  
+    year = date.getFullYear();  
+    month = date.getMonth() + 1;  
+    day = date.getDate();  
+    document.getElementById("current_date").innerHTML = month + "/" + day + "/" + year;  
+</script>  
+</div>  
 
   
   </center>
